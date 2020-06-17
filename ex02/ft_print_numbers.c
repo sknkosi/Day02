@@ -1,8 +1,8 @@
 /*The function prints digits, on a single line, in an ascending order */
 
-int		ft_putchar(char c);
+int	ft_putchar(char c);
 
-void	ft_print_numbers(void)
+void ft_print_numbers(void)
 {
 	char n;
 
