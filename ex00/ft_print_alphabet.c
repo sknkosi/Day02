@@ -1,4 +1,4 @@
-/* The function prints the alphabet in lowercase, on a single line, in an ascending order, starting from the letter ’a’ to 'z'.*/
+/* The function prints the alphabet in lowercase, on a single line, in an ascending order, starting from the letter ’a’ to 'z'*/
 
 int		ft_putchar(char c);
 
