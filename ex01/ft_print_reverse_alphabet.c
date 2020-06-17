@@ -1,8 +1,8 @@
 /*The function prints alphabets in lowercase, on a single line, on a descending order, starting from the letter ’z’to 'a' */
 
-int		ft_putchar(char c);
+int ft_putchar(char c);
 
-void	ft_print_reverse_alphabet(void)
+void ft_print_reverse_alphabet(void)
 {
 	char z;
 
