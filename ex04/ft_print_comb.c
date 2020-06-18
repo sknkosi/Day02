@@ -13,7 +13,7 @@ void	ft_print_comb(void)
 	while (d <= '7')
 	{
 		b = d + 1;
-		while (i <= '8')
+		while (b <= '8')
 		{
 			a = b + 1;
 			while (a <= '9')
