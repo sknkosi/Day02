@@ -1,42 +1,38 @@
+#include <unistd.h>
+
 /* The function prints different combination of two digits between 00 and 99, listed in an  ascending order*/
 
-int		ft_putchar(char c);
-void	xyz_putchar(char x, char y, char z);
-
-void	ft_print_comb2(void)
+void	ft_putchar(char c)
 {
-	char d;
-	char b;
-	char a;
-	char e;
+	write(1,&c,1);
+}
 
-	d = '0';
-	while (d <= '9')
+void ft_print_comb2(void)
+{
+	int		a;
+	int		b;
+
+	a = 0;
+	b = 0;
+	while (a < 100)
 	{
-		b = d + 1;
-		while (b <= '8')
+		b = a + 1;
+		while (b < 100)
 		{
-			a = b + 1;
-			xyz_putchar(d, b, ' ');
-			while (a <= '9')
+			ft_putchar(a / 10 + '0');
+			ft_putchar(a % 10 + '0');
+			ft_putchar(' ');
+			ft_putchar(b / 10 + '0');
+			ft_putchar(b % 10 + '0');
+			if ((a / 10 != 9) || (a % 10 != 8))
 			{
-				e = a + 1;
-				while (e <= '9')
-				{
-					xyz_putchar(a, e, ',');
-					e++;
-				}
-				a++;
+				ft_putchar(',');
+				ft_putchar(' ');
 			}
 			b++;
 		}
-		d++;
+		a++;
 	}
-}
+	ft_putchar('\n');
 
-void xyz_putchar(char x, char y, char z)
-{
-	ft_putchar(x);
-	ft_putchar(y);
-	ft_putchar(z);
 }
