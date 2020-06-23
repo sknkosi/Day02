@@ -2,15 +2,15 @@
 
 /* The function prints different combination of two digits between 00 and 99, listed in an  ascending order*/
 
-void	ft_putchar(char c)
+void ft_putchar(char c)
 {
 	write(1,&c,1);
 }
 
 void ft_print_comb2(void)
 {
-	int		a;
-	int		b;
+	int a;
+	int b;
 
 	a = 0;
 	b = 0;
