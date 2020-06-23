@@ -8,7 +8,7 @@ void ft_putchar(char c)
 }
 static void	ft_me_cago_en_norminette(int *arr, int col, int n)
 {
-	int		i;
+	int	i;
 
 	while (col)
 	{
@@ -31,9 +31,9 @@ static void	ft_me_cago_en_norminette(int *arr, int col, int n)
 
 void ft_print_combn(int n)
 {
-	int		arr[n];
-	int		i;
-	int		col;
+	int	arr[n];
+	int	i;
+	int	col;
 
 	col = n - 1;
 	if (n > 10)
@@ -46,9 +46,4 @@ void ft_print_combn(int n)
 		ft_putchar(arr[i++] + '0');
 	ft_me_cago_en_norminette(arr, col, n);
 	ft_putchar('\n');
-}
-int main()
-{
-	ft_print_combn();
-		return 0;
 }
