@@ -34,9 +34,3 @@ void	ft_print_comb(void)
 	}
 	ft_putchar('\n');
 }
-
-int main()
-{
- 	ft_print_comb();
-	return 0;
-}
