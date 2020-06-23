@@ -23,9 +23,3 @@ void ft_is_negative()
 	}
 
 }
-
-int main()
-{
-	ft_is_negative();
-	return 0;
-}
